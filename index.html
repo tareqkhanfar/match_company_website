@@ -635,7 +635,7 @@ const SITE_API = {
      127.0.0.1 while calling localhost (or the reverse) is a different origin
      to the browser: the server still logs 200, but the response is blocked
      and the fetch rejects. Deriving the host removes that mismatch entirely. */
-  BASE_URL: 'http://' + (window.location.hostname || 'localhost') + ':8000/v1',
+  BASE_URL: window.location.origin + '/v1',  // same-origin, proxied by nginx to the FastAPI service
   TIMEOUT_MS: 15000,    // a cold dev server + several MB of images can exceed 4s
   RETRY_MS: 900,        // one quick retry instead of waiting for the 60s poll
   REFRESH_MS: 60000

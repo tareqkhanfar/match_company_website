@@ -816,7 +816,7 @@ function validateRecord(entity, values, lang) {
    converts to and from the camelCase the UI uses.
    ========================================================================== */
 const DB_CONFIG = {
-  BASE_URL: 'http://localhost:8000/v1',  // FastAPI host (backend/README.md)
+  BASE_URL: window.location.origin + '/v1',  // same-origin, proxied by nginx to the FastAPI service
   TOKEN_KEY: 'ms_admin_jwt',
   TIMEOUT_MS: 12000,
   HEALTH_EVERY_MS: 20000,

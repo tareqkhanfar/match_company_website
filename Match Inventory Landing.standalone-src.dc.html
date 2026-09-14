@@ -573,7 +573,7 @@ const SITE_API = {
   /* Follow the page's own host: serving on 127.0.0.1 while calling localhost
      is a cross-origin request the browser blocks, even though the server
      logs 200 OK. */
-  BASE_URL: 'http://' + (window.location.hostname || 'localhost') + ':8000/v1',
+  BASE_URL: window.location.origin + '/v1',  // same-origin, proxied by nginx to the FastAPI service
   SECTOR: 'inventory',
   TIMEOUT_MS: 15000,
   REFRESH_MS: 15000
