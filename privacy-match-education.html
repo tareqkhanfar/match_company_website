@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>سياسة الخصوصية — Match Education</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700;800;900&family=IBM+Plex+Sans+Arabic:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: #ffffff; color: #274653; font-family: 'IBM Plex Sans Arabic', 'Segoe UI', Tahoma, sans-serif; line-height: 1.85; }
+  a { color: #1a9edb; text-decoration: none; }
+  a:hover { color: #5cbe3e; }
+
+  .ms-nav { position: sticky; top: 0; z-index: 90; display: flex; align-items: center; gap: 14px;
+    padding: 16px 6vw; backdrop-filter: blur(18px); background: rgba(255,255,255,.92);
+    border-bottom: 1px solid rgba(26,158,219,.14); }
+  .ms-nav img { height: 38px; width: auto; }
+  .ms-nav span { font-family: 'Cairo', sans-serif; font-weight: 800; color: #0f172a; font-size: 16px; }
+
+  .wrap { max-width: 860px; margin: 0 auto; padding: 48px 6vw 100px; }
+
+  h1 { font-family: 'Cairo', sans-serif; font-weight: 900; font-size: clamp(26px, 4vw, 36px); color: #0f172a; margin: 0 0 6px; }
+  h2 { font-family: 'Cairo', sans-serif; font-weight: 800; font-size: 20px; color: #0f172a; margin: 40px 0 14px; padding-top: 10px; border-top: 1px solid #eef2f5; }
+  .updated { color: #6b7f88; font-size: 14px; margin-bottom: 34px; }
+  .lead { color: #40545c; font-size: 16px; }
+
+  table { width: 100%; border-collapse: collapse; margin: 12px 0 8px; font-size: 15px; }
+  th, td { text-align: right; padding: 12px 14px; border-bottom: 1px solid #eef2f5; vertical-align: top; }
+  th { color: #0f172a; font-family: 'Cairo', sans-serif; font-weight: 800; background: #f6fafc; }
+  tr:last-child td { border-bottom: none; }
+
+  .badge-no { display: inline-block; margin: 4px 10px 4px 0; padding: 8px 14px; border-radius: 999px;
+    background: #f2fbf5; color: #16803d; font-size: 14px; font-weight: 600; }
+  ul.plain { padding-inline-start: 20px; margin: 8px 0; }
+  ul.plain li { margin: 6px 0; }
+
+  .note { background: #f6fafc; border-inline-start: 4px solid #1a9edb; border-radius: 10px; padding: 16px 18px; font-size: 15px; color: #40545c; margin: 14px 0; }
+
+  .lang-en { direction: ltr; text-align: left; border-top: 3px double #eef2f5; margin-top: 64px; padding-top: 40px; }
+  .lang-en table th, .lang-en table td { text-align: left; }
+
+  .contact-box { background: #0f172a; color: #eaf6ff; border-radius: 16px; padding: 26px 28px; margin-top: 40px; }
+  .contact-box a { color: #7fd1ff; }
+  .contact-box .label { color: #9fb4bc; font-size: 13px; }
+
+  footer { text-align: center; color: #9fb4bc; font-size: 13px; padding: 30px 6vw 50px; }
+</style>
+</head>
+<body>
+
+<nav class="ms-nav">
+  <a href="/"><img src="assets/ms-logo.png" alt="Match Systems"></a>
+  <span>Match Systems</span>
+</nav>
+
+<div class="wrap" dir="rtl">
+  <h1>سياسة الخصوصية — Match Education</h1>
+  <p class="updated">آخر تحديث: 15 سبتمبر 2026</p>
+
+  <p class="lead">
+    طوّرت Match Systems تطبيق Match Education للمدارس التي تستخدم نظام
+    <strong>match_schools</strong>. يتصل التطبيق بخادم المدرسة نفسها — كل مدرسة
+    (أو مجموعة مدارس) تشغّل نسختها الخاصة من النظام، ولا تملك Match Systems خادمًا
+    مشتركًا يجمع بيانات مدارس متعددة في مكان واحد.
+  </p>
+
+  <h2>البيانات التي يجمعها التطبيق</h2>
+  <table>
+    <tr><th>الفئة</th><th>التفاصيل</th></tr>
+    <tr><td>هوية الحساب</td><td>البريد الإلكتروني أو الرقم الجامعي/المدرسي، الاسم، والدور (إدارة/سكرتير/معلم/طالب/ولي أمر) — تزوّد بها المدرسة، وتُستخدم لتسجيل الدخول فقط.</td></tr>
+    <tr><td>الجلسة</td><td>ملف تعريف جلسة (session cookie) يُخزَّن في المخزن المشفَّر بالجهاز (Keystore)، ولا يغادر الجهاز إلا إلى خادم المدرسة نفسه.</td></tr>
+    <tr><td>البيانات الأكاديمية</td><td>الجدول الدراسي، الحضور، الدرجات، الواجبات، نتائج الامتحانات، الرسوم، والسلوك والتقييم — حسب صلاحية دور المستخدم.</td></tr>
+    <tr><td>بيانات صحية حسّاسة</td><td>ميزة الملف الصحي/العافية تخزّن ملاحظات متعلقة بصحة الطالب، ولا يراها إلا الموظفون المخوّلون وولي أمر الطالب نفسه.</td></tr>
+    <tr><td>الصور</td><td>قد تُستخدم الكاميرا لتصوير الواجبات لرفعها، ومعرض الصور لإرفاق ملفات بالرسائل أو المنشورات أو طلبات الطباعة. تذهب الصور إلى خادم المدرسة فقط، ولا تصل لأي طرف ثالث.</td></tr>
+    <tr><td>الرسائل</td><td>البريد الداخلي ومنشورات المجتمع والتعليقات التي يرسلها المستخدم داخل التطبيق.</td></tr>
+    <tr><td>رمز الإشعارات</td><td>رمز تسجيل Firebase Cloud Messaging، يُستخدم فقط لتوجيه الإشعارات لهذا الجهاز.</td></tr>
+    <tr><td>القياس الحيوي</td><td>البصمة أو الوجه، تُستخدم فقط عبر واجهة أندرويد الحيوية على الجهاز نفسه لفتح التطبيق محليًا. <strong>لا تُرسَل أو تُخزَّن لدينا إطلاقًا</strong> — أندرويد نفسه لا يكشف البيانات الحيوية الخام لأي تطبيق.</td></tr>
+  </table>
+
+  <h2>ما لا يقوم به التطبيق</h2>
+  <div>
+    <span class="badge-no">لا إعلانات ولا تتبّع إعلاني</span>
+    <span class="badge-no">لا أدوات تحليل سلوك (Analytics) — فقط Firebase لإيصال الإشعارات</span>
+    <span class="badge-no">لا بيع أو مشاركة بيانات مع أطراف ثالثة غير معنيّة</span>
+    <span class="badge-no">لا جمع بيانات خارج جلسة المستخدم المسجَّل بمدرسته</span>
+  </div>
+
+  <h2>من يملك البيانات ويتحكم بها</h2>
+  <p><strong>المدرسة</strong> هي الجهة المتحكمة بالبيانات: هي من تقرر من يملك حسابًا، وماذا يرى كل دور، ومدة الاحتفاظ بالسجلات. توفّر Match Systems البرمجية فقط، بينما تُخزَّن البيانات وتُعالَج على خادم المدرسة نفسه.</p>
+
+  <h2>الأطفال والمستخدمون القاصرون</h2>
+  <p>قد يستخدم هذا التطبيق طلابًا قاصرين. الحسابات تُنشأ وتُدار من قبل إدارة المدرسة، وليس عبر تسجيل ذاتي مفتوح — أي أن الطالب أو ولي الأمر لا يسجّل حسابًا بشكل مستقل.</p>
+  <div class="note">
+    آلية الحصول على موافقة ولي الأمر، ومدة الاحتفاظ بسجلات الطالب بعد مغادرته المدرسة، تُحدَّدهما سياسة القبول والتسجيل الخاصة بكل مدرسة على حدة، بما يتوافق مع الأنظمة المعمول بها في بلدها.
+  </div>
+
+  <div class="contact-box">
+    <div class="label">التواصل</div>
+    <div style="margin-top:6px; font-family:'Cairo',sans-serif; font-weight:800; font-size:17px;">Match Systems — شركة ماتش لحلول الأنظمة التكنولوجية</div>
+    <div style="margin-top:10px;">📧 <a href="mailto:info@matchprosys.com">info@matchprosys.com</a></div>
+    <div>📞 <span dir="ltr">+970 593 081 003</span></div>
+  </div>
+
+  <!-- ================= English ================= -->
+  <div class="lang-en" dir="ltr">
+    <h1>Privacy Policy — Match Education</h1>
+    <p class="updated">Last updated: September 15, 2026</p>
+
+    <p class="lead">
+      Match Systems built Match Education for schools running the
+      <strong>match_schools</strong> system. The app connects to the school's own
+      server — each school (or school group) runs its own instance; Match
+      Systems does not operate a shared backend that pools data across schools.
+    </p>
+
+    <h2>Data the app collects</h2>
+    <table>
+      <tr><th>Category</th><th>Details</th></tr>
+      <tr><td>Account identity</td><td>Email or student ID, name, role (admin/secretary/teacher/student/parent) — supplied by the school, used to sign in.</td></tr>
+      <tr><td>Session</td><td>A session cookie, stored in the device's encrypted Keystore. Never leaves the device except to the school's own server.</td></tr>
+      <tr><td>Academic records</td><td>Timetable, attendance, grades, assignments, exam results, fees, behaviour and evaluation records — as the user's role permits.</td></tr>
+      <tr><td>Health‑adjacent data</td><td>The wellbeing/health‑file feature stores health‑related notes for a student, visible to authorised staff and the student's own guardian.</td></tr>
+      <tr><td>Photos</td><td>The camera may be used to photograph homework for submission, and the gallery to attach files to messages, posts, or print requests. Photos go to the school's own server, never to a third party.</td></tr>
+      <tr><td>Messages</td><td>Mail, community posts, and comments the user sends inside the app.</td></tr>
+      <tr><td>Push token</td><td>A Firebase Cloud Messaging registration token, used only to route notifications to this device.</td></tr>
+      <tr><td>Biometric</td><td>Fingerprint/face, used only through Android's on‑device biometric API to unlock the app locally. Never transmitted or stored by us — Android itself never exposes raw biometric data to any app.</td></tr>
+    </table>
+
+    <h2>What it does not do</h2>
+    <ul class="plain">
+      <li>No advertising SDK, no ad tracking.</li>
+      <li>No analytics SDK beyond Firebase Cloud Messaging (delivery only, not behavioural tracking).</li>
+      <li>No sale or sharing of data with unrelated third parties.</li>
+      <li>No data collected outside what a signed‑in user's own school session returns.</li>
+    </ul>
+
+    <h2>Who controls the data</h2>
+    <p>The <strong>school</strong> is the data controller: it decides who has an account, what each role can see, and how long records are kept. Match Systems provides the software; the school's own server is where the data is stored and processed.</p>
+
+    <h2>Children and minors</h2>
+    <p>Students using this app may be minors. Accounts are created and managed by the school, not through open self‑registration — a student or guardian does not sign up independently.</p>
+    <div class="note">
+      How parental consent is obtained, and how long a student's records are kept after leaving the school, are set by each school's own enrolment policy, in line with the regulations of its country.
+    </div>
+
+    <div class="contact-box">
+      <div class="label">Contact</div>
+      <div style="margin-top:6px; font-family:'Cairo',sans-serif; font-weight:800; font-size:17px;">Match Systems</div>
+      <div style="margin-top:10px;">📧 <a href="mailto:info@matchprosys.com">info@matchprosys.com</a></div>
+      <div>📞 +970 593 081 003</div>
+    </div>
+  </div>
+</div>
+
+<footer>© 2026 Match Systems · <a href="/">matchprosys.com</a></footer>
+</body>
+</html>
