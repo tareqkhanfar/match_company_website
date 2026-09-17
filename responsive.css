@@ -1,0 +1,105 @@
+/* Shared responsive layer for the home page and the six product landing pages.
+   Loaded after each page's own styles. Every rule is inside a max-width media
+   query, so desktop layouts are unchanged. !important is required because the
+   pages style almost everything inline. */
+
+/* ---------------------------------------------------------- small laptop */
+@media (max-width: 1000px) {
+  /* Landing navbar: section links are dropped before they push the language
+     switch off-screen; home, the demo button and language stay. */
+  nav:not(.ms-nav) { padding: 14px 24px !important; gap: 16px !important; }
+  nav:not(.ms-nav) > div { gap: 14px !important; }
+  nav:not(.ms-nav) > div > a:not(.nav-home):not([href="#demo"]) { display: none !important; }
+}
+
+/* ---------------------------------------------------------------- tablet */
+@media (max-width: 900px) {
+  /* Hero: stack text above the mockup. The desktop hero is pinned (sticky) at
+     a fixed 100vh with overflow hidden; once stacked it is taller than the
+     screen, so pinning it clipped the mockup under the next section. */
+  #top {
+    position: relative !important;
+    height: auto !important;
+    min-height: 0 !important;
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 30px !important;
+    padding: 118px 6vw 150px !important;
+  }
+  /* The scroll script fades the hero out over the first ~half screen. That
+     suits a side-by-side hero; stacked, the mockup is below the fold and
+     would vanish before it is ever reached. */
+  #top > div:nth-child(2),
+  #top > div:nth-child(3) {
+    opacity: 1 !important;
+    filter: none !important;
+    transform: none !important;
+  }
+  #top h1 { overflow-wrap: anywhere; }
+  #top [style*="fit-content"] {
+    flex-wrap: wrap !important;
+    width: auto !important;
+    max-width: 100% !important;
+  }
+
+  /* Demo form: two columns of `1fr` refused to shrink below the inputs'
+     intrinsic width, pushing the form off-screen on tablets. */
+  #demo > div {
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 34px !important;
+  }
+  #demo form, #contact form { min-width: 0; }
+  #demo form label, #contact form label { min-width: 0; }
+  #demo form input, #demo form select, #demo form textarea,
+  #contact form input, #contact form select, #contact form textarea {
+    box-sizing: border-box !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+  }
+
+  /* Language/home controls must never wrap onto two lines. */
+  nav a, nav button { white-space: nowrap; }
+}
+
+/* ----------------------------------------------------------------- phone */
+@media (max-width: 560px) {
+  #top { padding: 104px 18px 140px !important; gap: 26px !important; }
+  #top h1 { font-size: clamp(26px, 7.4vw, 34px) !important; line-height: 1.35 !important; }
+
+  /* Hero actions: full-width, one per row, easy to tap. */
+  #top [style*="fit-content"] { width: 100% !important; gap: 10px !important; }
+  #top [style*="fit-content"] > a {
+    flex: 1 1 100% !important;
+    justify-content: center !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Navbar: logo + home + language had to fit in ~360px. */
+  nav { padding: 12px 14px !important; gap: 10px !important; }
+  nav > div { gap: 10px !important; }
+  nav:not(.ms-nav) img { width: 36px !important; height: 36px !important; }
+  nav .nav-home { font-size: 0 !important; gap: 0 !important; padding: 6px !important; }
+  nav .nav-home i { font-size: 22px !important; }
+  nav button { padding: 8px 10px !important; }
+
+  /* Home page navbar. */
+  .ms-nav { padding: 12px 14px !important; gap: 10px !important; }
+  .ms-nav > a { gap: 8px !important; min-width: 0; }
+  .ms-nav > a img { height: 36px !important; }
+  .ms-nav > a span { font-size: 16px !important; letter-spacing: 0 !important; }
+  .ms-nav-links { gap: 8px !important; }
+  .ms-nav-links .ms-nav-cta { padding: 8px 14px !important; font-size: 14px !important; }
+  .ms-nav-links button { padding: 8px 12px !important; font-size: 13px !important; }
+
+  /* Grids whose cards had a 300px minimum overflowed small phones. */
+  [style*="minmax(300px, 1fr)"] { grid-template-columns: minmax(0, 1fr) !important; }
+}
+
+@media (max-width: 400px) {
+  /* Smallest phones: the home page keeps the logo mark and drops the wordmark
+     so the booking button and language switch stay reachable. */
+  .ms-nav > a span { display: none !important; }
+  nav:not(.ms-nav) > a { gap: 7px !important; }
+  nav:not(.ms-nav) > a span { font-size: 14px !important; }
+  nav:not(.ms-nav) img { width: 32px !important; height: 32px !important; }
+}
