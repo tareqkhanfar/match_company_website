@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://matchprosys.com/</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://matchprosys.com/Match%20Education%20Landing.standalone-src.dc.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://matchprosys.com/Match%20Distribution%20Landing.standalone-src.dc.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://matchprosys.com/Match%20HR%20Landing.standalone-src.dc.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://matchprosys.com/Match%20Health%20Landing.standalone-src.dc.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://matchprosys.com/Match%20Accounting%20Landing.standalone-src.dc.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://matchprosys.com/Match%20Inventory%20Landing.standalone-src.dc.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://matchprosys.com/education</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://matchprosys.com/distribution</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://matchprosys.com/hr</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://matchprosys.com/health</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://matchprosys.com/accounting</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://matchprosys.com/inventory</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://matchprosys.com/privacy-match-education.html</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
   <url><loc>https://matchprosys.com/privacy-match-erp-mobile.html</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
 </urlset>
